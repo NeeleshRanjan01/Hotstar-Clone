@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+.navbarDisplay {
+    display: flex;
+    justify-content: space-between;
+    height: 76px;
+    background-color: #131a27;
+    align-items: center;
+}
+
+.navbar_left_section {
+    display: flex;
+}
+
+.navbar_left_section_hamburger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 20px 0px 15%;
+}
+
+.hamburger_line {
+    border-top: 3px solid #c5cdcb;
+    width: 22px;
+    padding-top: 3px;
+}
+
+.navbar_left_section_link {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar_left_section_link>div {
+    margin-right: 20px;
+    color: #c5cdcb;
+}
+
+.navbar_right_section {
+    display: flex;
+}
+
+.navbar_right_section>input {
+    background-color: #131a27;
+    border: none;
+    width: 240px;
+    height: 32px;
+    border-bottom: 0.5px solid #c5cdcb;
+    margin-right: 20px;
+    font-size: 15px;
+    color: #c5cdcb;
+}
+
+.navbar_right_section>input::placeholder {
+    color: #c5cdcb;
+}
+
+.navbar_right_section>input:focus {
+    outline: none;
+    width: 360px;
+    border-bottom: 0.5px solid #1f80e0
+}
+
+.navbar_right_section>button {
+    background-color: #1f80e0;
+    font-size: 12px;
+    font-weight: bold;
+    width: 95.34px;
+    height: 28px;
+    color: white;
+    border-radius: 5px;
+}
+
+.navbar_right_section>div {
+    margin-left: 10px;
+    margin-right: 40px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #c5cdcb;
+}
+
+.subLink {
+    border-radius: 5px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    z-index: 3;
+    background-color: #1a2334;
+    /* height: 350px; */
+    /* width: 140px; */
+}
+
+.subLink>div {
+    display: flex;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 20px;
+    height: 40px;
+    align-items: center;
+}
+
+.subLink>div:hover {
+    background-color: #111723;
+    
+}
+
+.subLink:hover {
+    display: flex;
+}
+
+.link:hover+.subLink {
+    display: flex;
+}
